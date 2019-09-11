@@ -1,0 +1,57 @@
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <p>olebogeng.com</p>
+    </div>
+    <ul>
+      <li>
+          <a class='fas fa-shopping-cart' routerLink="/cart">
+            <span class="badge badge-danger ml-2">{{total}}</span>
+          </a> 
+      <li><a routerLink="">Logout</a></li>
+
+    </ul>
+  </div>
+</nav>
+
+<div class="col-xs-12 col-md-3 col-md-push-9">
+  <div class="row">
+   
+  </div>
+</div>
+
+<div class="col-md-12">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3" *ngFor="let product of service.list">
+        <div class="tileContainer">
+          <div>
+            <img src="assets/{{product.productImage}}"style="width:10em;height:8em;">
+          </div>
+          <div style="font-weight:bold; color: #616161">
+            {{product.productBrand}}
+          </div>
+          <div class="description">
+            {{product.productName}}
+            {{product.productMass}}
+          </div>
+          <div class="price">{{"R"}}{{product.productPrice}}</div>
+          <div class="addremove"><button class="btn btn-secondary" style="margin-right: 1em; background: #6D4C41" (click)="OnCartDecrement(product)">-</button>
+            <div class="itemcount">{{product.cartItemCount}}</div>
+            <button class="btn btn-secondary" style="margin-left: 1em; background: #6D4C41" (click)="OnCartIncrement(product)">+</button>
+          </div>
+          <div class="addtocart"><button button type="button" class="btn btn-primary" (click)="OnAddTrolley(product)">
+              ADD TO TROLLEY
+            </button></div>
+        </div>
+      </div>
+      
+    </div>
+      
+  </div>
+  <div class="col-md-3"></div>
+  
+ 
+ 
+ 
+  

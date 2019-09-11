@@ -1,0 +1,30 @@
+.navbar {
+    margin-bottom: 50px;
+    border-radius: 0;
+  }
+  .title{
+    display: block;
+    text-align: center;
+    margin: 20px 0 0px 0;
+    padding: 0 10px;
+    line-height: normal;
+    height: 50px;
+    overflow: hidden;
+  }
+  img{
+    width: 200px;
+    height: 200px;
+    max-width: none;
+    max-height: none;
+    display: block;
+    text-align: center;
+  }
+  .tileContainer a{
+    display: block;
+    margin: 0 7px 10px 0px;
+    padding-right: 0;
+    border: 1px solid #cccccc;
+  }
+  .container{
+    margin-top: 5px;
+  }
