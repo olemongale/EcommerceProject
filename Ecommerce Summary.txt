@@ -1,0 +1,8 @@
+E-Commerce System Summary
+
+1.The system registers new customers
+2.Customer can login to the System.
+3.Admin User can Add, Remove and update products.
+4.Customer can view products.
+5.Customer Can add products to a cart.
+5.Customer Can remove unwanted products to a cart.
